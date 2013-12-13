@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.categoryview"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15"
+        tools:ignore="OldTargetApi" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/kpit_icon"
+        android:label="@string/appName" >
+        <activity
+            android:name="com.example.categoryview.MainActivity"
+            android:configChanges="locale"
+            android:label="@string/appName"
+            android:theme="@style/MyTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.categoryview.WelcomeScreen"
+            android:label="@string/title_activity_welcome_screen"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name="com.example.categoryview.ExperimentView"
+            android:label="@string/title_activity_experiment_view"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name="com.example.categoryview.AddCategory"
+            android:label="@string/title_activity_add_category" >
+        </activity>
+        <activity
+            android:name="com.example.categoryview.AddExperiment"
+            android:label="@string/title_activity_add_experiment" >
+        </activity>
+        <activity
+            android:name="com.example.categoryview.ExperimentStepsView"
+            android:label="@string/title_activity_experiment_steps_view"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name="com.example.categoryview.TeacherHomeScreen"
+            android:label="@string/title_activity_teacher_home_screen" >
+        </activity>
+        <activity
+            android:name="com.example.categoryview.AddUpdateDelete"
+            android:label="@string/title_activity_add_update_delete" >
+        </activity>
+        <activity
+            android:name="com.example.categoryview.UpdateCategory"
+            android:label="@string/title_activity_update_category" >
+        </activity>
+        <activity
+            android:name="com.example.categoryview.AddExperimentSteps"
+            android:label="@string/title_activity_add_experiment_steps" >
+        </activity>
+        <activity
+            android:name="com.example.categoryview.ImportModule"
+            android:label="@string/title_activity_import_module" >
+        </activity>
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" >
+    </supports-screens>
+
+</manifest>

@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/stringimage"
+    android:paddingBottom="@dimen/New"
+    android:paddingLeft="@dimen/New"
+    android:paddingRight="@dimen/New"
+    android:paddingTop="@dimen/New"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/catName"
+        android:layout_width="800dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/catImage"
+        android:paddingLeft="@dimen/New"
+        android:text="@string/cat_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#00CC99"
+        android:textSize="20sp"
+        android:textStyle="normal|bold|italic"
+        android:theme="@style/MyTheme" />
+
+    <TextView
+        android:id="@+id/catDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/catImage"
+        android:layout_alignLeft="@+id/catName"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/catName"
+        android:paddingLeft="@dimen/New"
+        android:paddingTop="@dimen/New"
+        android:text="@string/cat_desc"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/catImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/expName"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/stringimage"
+        android:maxHeight="75dp"
+        android:maxWidth="75dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/cat_1" />
+
+</RelativeLayout>

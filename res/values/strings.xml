@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Chhote Scientist</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="cat_name">Category Name</string>
+    <string name="cat_desc">Category Descripition</string>
+    <string name="stringimage">Category Image</string>
+    <string name="cat_string">Category String</string>
+    <string name="appName">Chhote Scientists</string>
+    <string name="cat_view">Categories</string>
+    <string name="title_activity_welcome_screen">WelcomeScreen</string>
+    <string name="title_activity_experiment_view">ExperimentView</string>
+    <string name="title_activity_add_category">AddCategory</string>
+    <string name="title_activity_add_experiment">AddExperiment</string>
+    <string name="title_activity_experiment_steps_view">ExperimentStepsView</string>
+
+    <color name="Black">#000000</color>
+    <color name="Grey">#808080</color>
+    <color name="CronlowerBlue">#6495ED</color>
+
+    <string name="exp_name">Experiment Name</string>
+    <string name="step_desc">This is Step Description</string>
+    <string name="view_anim">View Video</string>
+    <string name="view_pdf">View PDF</string>
+    <string name="application_name">KPIT Cummins</string>
+    <string name="categories">Categories</string>
+    <string name="blank"></string>
+    <string name="enter_cat_name">Enter Category Name</string>
+    <string name="enter_cat_desc">Enter Category Descrption</string>
+    <string name="add_category">Add Category</string>
+    <string name="title_activity_teacher_home_screen">TeacherHomeScreen</string>
+    <string name="home_screen_cat_but">Categories</string>
+    <string name="home_screen_exp_but">Experiments</string>
+    <string name="title_activity_add_update_delete">AddUpdateDelete</string>
+    <string name="add_button">Add Categories</string>
+    <string name="update_button">Update Categories</string>
+    <string name="delete_button">Delete Categories</string>
+    <string name="title_activity_update_category">UpdateCategory</string>
+    <string name="delete">Delete Item</string>
+    <string name="add">Add New</string>
+    <string name="update">Update Item</string>
+    <string name="add_exp_name">Enter Experiment Name</string>
+    <string name="enter_exp_desc">Enter Experiment Descripition</string>
+    <string name="enter_no_of_step">Enter No Of Steps</string>
+    <string name="add_exp_but">Add Experiment</string>
+    <string name="title_activity_add_experiment_steps">AddExperimentSteps</string>
+    <string name="step_no">Step No</string>
+    <string name="browse_image">Browse Image</string>
+    <string name="browse_pdf">Browse PDF</string>
+    <string name="browse_video">Browse Video</string>
+    <string name="add_step_button">Add Step</string>
+    <string name="image_path">Path of Image</string>
+    <string name="enter_step_desc">" Here Enter Step Description \\n You are entering text \\n Dont Think \\n Do it"</string>
+    <string name="pdf_path">Path of PDF</string>
+    <string name="video_path">Path OF Video</string>
+    <string name="exp_desc">Experiment Description</string>
+
+    <!-- login constant -->
+    <string name="login_image"></string>
+    <string name="user_name"></string>
+    <string name="password"></string>
+    <string name="user_name_hint">User Name</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="reset_button">Reset</string>
+    <string name="temp">Hello</string>
+    <string name="title_activity_import_module">ImportModule</string>
+    <string name="path_of_xml_file">Browse Path Of Xml File And Click On Import</string>
+    <string name="b_importXML">Import</string>
+    <string name="browse_xml_file">Browse Xml File</string>
+    <string name="b_add_category">Add New Category</string>
+    <string name="b_add_Experiment">Add New Experiment</string>
+    <string name="select_language">Select Language</string>
+    <string name="lan_Marathi">हिंदी</string>
+    <string name="select_english">English</string>
+
+</resources>

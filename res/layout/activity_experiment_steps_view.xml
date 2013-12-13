@@ -1,0 +1,198 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    tools:context=".ExperimentStepsView" >
+    
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+			
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="horizontal"
+                android:scrollbarStyle="insideOverlay" >
+           
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/CronlowerBlue"
+                android:dividerPadding="8dp"
+                android:gravity="bottom|center_vertical|fill_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/Div" >
+
+            </TabWidget>
+			</HorizontalScrollView>
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/steps"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" 
+                    android:textAlignment="center"
+                    >
+                </LinearLayout>
+
+                
+                
+            </FrameLayout>
+        </LinearLayout>
+        
+    </TabHost>
+
+    <Button
+        android:id="@+id/bBackward"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/backward"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" />
+
+    <Button
+        android:id="@+id/bForward"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/forward"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:id="@+id/stepExpDesc"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bBackward"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tabhost"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@+id/stepImageView"
+        android:background="@drawable/back"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/step_desc"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#990000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/stepExpName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/stepImageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tabhost"
+        android:background="@drawable/back2"
+        android:paddingLeft="10dp"
+        android:text="@string/exp_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#990000" />
+
+   
+
+    <Button
+        android:id="@+id/bViewAnimation"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/stepExpDesc"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/bBackward"
+        android:background="@drawable/untitled"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/view_anim"
+        android:textColor="#B22222"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/bViewPdf"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/stepExpDesc"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/bForward"
+        android:layout_toRightOf="@+id/bViewAnimation"
+        android:background="@drawable/untitled"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/view_pdf"
+        android:textColor="#B22222"
+        android:textSize="25sp" />
+     <ImageView
+        android:id="@+id/stepImageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignBottom="@+id/stepExpDesc"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/stepExpDesc"
+        android:background="@drawable/back"
+        android:contentDescription="@string/stringimage"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/csbacground" />
+
+    <VideoView
+        android:id="@+id/videoAnimation"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignBottom="@+id/stepExpDesc"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/stepExpDesc"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:scaleType="fitXY"
+        android:visibility="invisible" />
+
+</RelativeLayout>

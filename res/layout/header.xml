@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E9AFE"
+    android:orientation="horizontal"
+    android:paddingLeft="7dp"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/taskbarRibin"
+        android:layout_width="10dp"
+        android:layout_height="7dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/blank"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textScreenName"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textAppName"
+        android:layout_alignTop="@+id/textAppName"
+        android:layout_toRightOf="@+id/textAppName"
+        android:background="@drawable/tab_button_refine"
+        android:gravity="center"
+        android:paddingRight="5dp"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:text="@string/cat_view"
+        android:textAlignment="textStart"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#00CC99"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bAddExp"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/taskbarRibin"
+        android:background="@drawable/kpit_icon"
+         />
+
+    <TextView
+        android:id="@+id/textAppName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bAddExp"
+        android:layout_alignTop="@+id/bAddExp"
+        android:layout_toRightOf="@+id/bAddExp"
+        android:gravity="center"
+        android:text="@string/application_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/taskbarRibin"
+        android:background="@drawable/gnome_window_close" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignTop="@+id/closeButton"
+        android:layout_toLeftOf="@+id/closeButton"
+        android:background="@drawable/home_w" />
+
+    <Button
+        android:id="@+id/settingButton"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_alignBaseline="@+id/homeButton"
+        android:layout_alignBottom="@+id/homeButton"
+        android:layout_toLeftOf="@+id/homeButton"
+        android:background="@drawable/setting" />
+
+</RelativeLayout>

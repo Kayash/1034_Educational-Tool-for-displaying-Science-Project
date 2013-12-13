@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/login_image"
+        android:src="@drawable/login_icon" />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:ems="10"
+        android:hint="@string/user_name_hint"
+        android:text="@string/user_name"
+        android:textSize="@dimen/size20" />
+
+     <EditText
+        android:id="@+id/user_password"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/user_name"
+        android:layout_below="@+id/user_name"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:text="@string/password"
+        android:textSize="@dimen/size20" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_alignBaseline="@+id/reset_button"
+        android:layout_alignBottom="@+id/reset_button"
+        android:layout_alignLeft="@+id/user_password"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/button_theme"
+        android:textSize="@dimen/size20" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/user_password"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/login_button"
+        android:background="@drawable/reset_button_theme"
+        android:textSize="@dimen/size20" />
+
+</RelativeLayout>
